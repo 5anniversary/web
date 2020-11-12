@@ -1,0 +1,49 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box !important;
+    transition: ease all 0.5s;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    background-color: black;
+    padding: 30px;
+    margin-bottom: 100px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header .btn {
+    margin-left: 40px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+header .logo {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+div {
+    margin: 10px;
+}
+
+table {
+    width: 100%;
+    border-top: 1px solid #444444;
+}
+  
+th, td {
+    border-bottom: 1px solid #444444;
+    padding: 10px;
+    font-size: 20px;
+}
