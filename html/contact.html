@@ -2,8 +2,28 @@
 <html lang="ko">
     <head>
         <meta charset="utf-8">
+        <meta name="author" content="오준현">
+        <meta name="description" content="연락">
+        <meta name="keywords" content="contact">
         <title>준현</title>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function() {
+                emailjs.init("user_1nZHzGufx5vIym0QHKWza");
+            })();
+        </script>
+        <script type="text/javascript"> window.onload = function() { 
+            // form id, #contact-form 안에 있는 것들 전송 
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                 event.preventDefault(); 
+                 this.contact_number.value = Math.random() * 100000 | 0; 
+                 // 서비스 id, 이메일 템플릿 
+                 emailjs.sendForm('service_nagwwen', 'template_l6egvdm', this); 
+                 }); 
+            }
+         </script>
         <link rel="stylesheet" href="../css/common.css">
+        <link rel="stylesheet" href="../css/form.css">
     </head>
     <body>
         <header>
@@ -13,5 +33,27 @@
             <a class="btn" href="activities.html" role="button">Activities</a>
             <a class="btn" href="contact.html" role="button">Contact</a>
         </header>
+        <div id="form">
+            <form id="contact-form" class="form-class">
+                <div class="form-group">
+                    <input type="hidden" name="contact_number">
+                </div>
+                <div class="form-group">
+                    <label for="Email" class="label">이메일을 적어주세요</label>
+                    <div class="input-group">
+                        <input type="email" id="Email" name="from_name" class="form-control" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="Message" class="label">내용을 알려주세요</label>
+                    <div class="input-group">
+                        <textarea id="Message" name="message" class="form-control" rows="6" maxlength="3000" required></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="button" class="btn btn-primary btn-lg btn-block">메일 보내기</button>
+                </div>
+            </form>
+        </div>
     </body>
 </html>
