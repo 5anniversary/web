@@ -1,22 +1,234 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="utf-8">
-        <meta name="author" content="오준현">
-        <meta name="description" content="프로젝트-StudyTogether">
-        <meta name="keywords" content="2020, iOS, Server, Vapor">
-        <title>준현</title>
-        <link rel="stylesheet" href="../css/common.css">
-    </head>
-    <body>
-        <header>
-            <a class="logo" href="main.html" role="button">5anniversary</a>
-            <a class="btn" href="history.html" role="button">History</a>
-            <a class="btn" href="project.html" role="button">Project</a>
-            <a class="btn" href="activities.html" role="button">Activities</a>
-            <a class="btn" href="contact.html" role="button">Contact</a>
-        </header>
-        <section>
-        </section>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="오준현">
+    <meta name="description" content="프로젝트-StudyTogether">
+    <meta name="keywords" content="2020, iOS, Server, Vapor">
+    <title>준현</title>
+    <link rel="stylesheet" href="../css/common.css">
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="main.html" role="button">5anniversary</a>
+        <a class="btn" href="history.html" role="button">History</a>
+        <a class="btn" href="project.html" role="button">Project</a>
+        <a class="btn" href="activities.html" role="button">Activities</a>
+        <a class="btn" href="contact.html" role="button">Contact</a>
+    </header>
+    <section style="margin-left: 10%;">
+        <h1>Study Together iOS</h1><br /><br /><br />
+        <h2 id="-">기능설명</h2><br /><br />
+        <h3 id="-">스터디를 찾고, 관리해주는 어플리케이션</h3><br />
+        <p><br>
+            <br>
+            <br></p>
+        <h2 id="contributors-team-project">Contributors : Team Project</h2>
+        <ul>
+            <li><a href="https://github.com/5anniversary">오준현</a> - leader</li>
+            <li><a href="https://github.com/iowa329">김희재</a></li>
+            <li><a href="https://github.com/HyunSikWon">원현식</a>
+                <br>
+                <br>
+                <br></li>
+        </ul>
+        <h2 id="-">앱 아이콘</h2>
+        <p><img src="https://user-images.githubusercontent.com/22820675/84229893-af375480-ab25-11ea-88d5-cafca8989a47.png"
+                width="300"></p>
+        <h2 id="-">스크린 샷</h2>
+        <p><img src="https://user-images.githubusercontent.com/22820675/84229813-78613e80-ab25-11ea-9d46-bbed6a2a35e4.png"
+                width="300">
+            <img src="https://user-images.githubusercontent.com/22820675/84229817-7b5c2f00-ab25-11ea-9fbf-28810d475cea.png"
+                width="300">
+            <img src="https://user-images.githubusercontent.com/22820675/84229820-7d25f280-ab25-11ea-87da-346105366420.png"
+                width="300">
+            <img src="https://user-images.githubusercontent.com/22820675/84229822-7dbe8900-ab25-11ea-8b78-1833bfacb86f.png"
+                width="300">
+            <img src="https://user-images.githubusercontent.com/22820675/84229825-7e571f80-ab25-11ea-9dc6-f09882f735fc.png"
+                width="300"></p>
+        <br /><br />
+        <h2 id="-">개발 환경</h2>
+        <ol>
+            <li>Swift 버전</li>
+            <li>
+                <p>5</p>
+            </li>
+            <li>
+                <p>Xcode 버전</p>
+            </li>
+            <li>
+                <p>11.4.1</p>
+            </li>
+            <li>
+                <p>사용한 라이브러리</p>
+            </li>
+        </ol>
+        <br /><br />
+        <table>
+            <thead>
+                <tr>
+                    <th>라이브러리</th>
+                    <th>사용 이유</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Alamofire</td>
+                    <td>REST API 서버 연동</td>
+                </tr>
+                <tr>
+                    <td>Kingfisher</td>
+                    <td>이미지 URL 처리</td>
+                </tr>
+                <tr>
+                    <td>Snapkit</td>
+                    <td>코드로 구현하는 레이아웃</td>
+                </tr>
+                <tr>
+                    <td>Then</td>
+                    <td>코드 단순화를 위해 사용</td>
+                </tr>
+                <tr>
+                    <td>SwiftKeychainWrapper</td>
+                    <td>중요 자료 암호화 저장을 위해 사용</td>
+                </tr>
+            </tbody>
+        </table>
+        <br /><br />
+        <h2 id="-extension">사용한 Extension</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Extension</th>
+                    <th>사용 이유</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Date</td>
+                    <td>날짜 처리</td>
+                </tr>
+                <tr>
+                    <td>String</td>
+                    <td>검색어 encoding to URL / 정규표현식</td>
+                </tr>
+                <tr>
+                    <td>UIButton</td>
+                    <td>버튼 Rounding, shadow</td>
+                </tr>
+                <tr>
+                    <td>UIColor</td>
+                    <td>각종 색 주입, hex로 조절</td>
+                </tr>
+                <tr>
+                    <td>UIImageView</td>
+                    <td>Kingfisher로 이미지 처리</td>
+                </tr>
+                <tr>
+                    <td>UITabbar</td>
+                    <td>탭바 shadow</td>
+                </tr>
+                <tr>
+                    <td>UITableView</td>
+                    <td>테이블 뷰 엠티뷰 처리</td>
+                </tr>
+                <tr>
+                    <td>UIView</td>
+                    <td>레이아웃 처리, 라운딩 처리, 테두리, 모션</td>
+                </tr>
+                <tr>
+                    <td>UIViewController</td>
+                    <td>간단한 AlertController</td>
+                </tr>
+                <tr>
+                    <td>CALayer</td>
+                    <td>shadow, 테두리 처리</td>
+                </tr>
+                <tr>
+                    <td>UITextView</td>
+                    <td>placeholder, 세로 가운데 정렬</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br /><br />
+        <h1>Server</h1>
+        <br/><br/><br/><br/>
+        <h1 id="-studytogether-server-https-github-com-skhu-study-server-"><a
+                href="https://github.com/SKHU-STUDY/Server">StudyTogether-Server</a></h1>
+                <br/><br/>
+        <h3 id="-">기능설명</h3><br/><br/>
+        <h3 id="-">스터디를 찾고, 관리해주는 어플리케이션</h3><br/><br/>
+        <h3 id="-">사용 기술</h3><br/><br/>
+        <ul>
+            <li>Swift</li>
+            <li>Vapor(server-side swift framework)</li>
+            <li>MySQL</li>
+            <li>Heroku </li>
+        </ul><br/><br/>
+        <h2 id="-">앱 아이콘</h2><br/><br/>
+        <p><img src="https://user-images.githubusercontent.com/22820675/84229893-af375480-ab25-11ea-88d5-cafca8989a47.png"
+                width="300"></p><br/><br/>
+        <h2 id="-">스크린 샷</h2><br/><br/>
+        <p><img src="https://user-images.githubusercontent.com/22820675/84229813-78613e80-ab25-11ea-9d46-bbed6a2a35e4.png"
+                width="300">
+            <img src="https://user-images.githubusercontent.com/22820675/84229817-7b5c2f00-ab25-11ea-9fbf-28810d475cea.png"
+                width="300">
+            <img src="https://user-images.githubusercontent.com/22820675/84229820-7d25f280-ab25-11ea-87da-346105366420.png"
+                width="300">
+            <img src="https://user-images.githubusercontent.com/22820675/84229822-7dbe8900-ab25-11ea-8b78-1833bfacb86f.png"
+                width="300">
+            <img src="https://user-images.githubusercontent.com/22820675/84229825-7e571f80-ab25-11ea-9dc6-f09882f735fc.png"
+                width="300"></p>
+        <h2 id="-">개발 환경</h2><br/><br/>
+        <ol>
+            <li>Swift 버전</li>
+            <li>
+                <p>5</p>
+            </li>
+            <li>
+                <p>Xcode 버전</p>
+            </li>
+            <li>
+                <p>11.4.1</p>
+            </li>
+            <li>
+                <p>Vapor 버젼</p>
+            </li>
+            <li>
+                <p>3</p>
+            </li>
+            <li>
+                <p><a href="https://github.com/SKHU-STUDY/Server/wiki">API Wiki</a></p>
+            </li>
+        </ol>
+        <br/><br/>
+
+        <h2 id="-">팀원 소개</h2>
+        <ul>
+            <li>오준현 </li>
+        </ul>
+        <blockquote>
+            <p>성공회대 소프트웨어공학과 15학번 학생입니다.</p>
+            <p>StudyTogether iOS, 앱 디자인 파트, Server를 담당하고 있습니다.</p>
+        </blockquote>
+        <ul>
+            <li>김희재 </li>
+        </ul>
+        <blockquote>
+            <p>성공회대 소프트웨어공학과 15학번 학생입니다.</p>
+            <p>StudyTogether iOS 파트를 담당하고 있습니다.</p>
+        </blockquote>
+        <ul>
+            <li>원현식</li>
+        </ul>
+        <blockquote>
+            <p>성공회대 글로컬IT학과 16학번 학생입니다.</p>
+            <p>StudyTogether iOS 파트를 담당하고 있습니다.</p>
+        </blockquote>
+    </section>
+</body>
+
 </html>

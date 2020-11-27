@@ -1,22 +1,585 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="utf-8">
-        <meta name="author" content="오준현">
-        <meta name="description" content="프로젝트-Ounce">
-        <meta name="keywords" content="2020, iOS">
-        <title>준현</title>
-        <link rel="stylesheet" href="../css/common.css">
-    </head>
-    <body>
-        <header>
-            <a class="logo" href="main.html" role="button">5anniversary</a>
-            <a class="btn" href="history.html" role="button">History</a>
-            <a class="btn" href="project.html" role="button">Project</a>
-            <a class="btn" href="activities.html" role="button">Activities</a>
-            <a class="btn" href="contact.html" role="button">Contact</a>
-        </header>
-        <section>
-        </section>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="오준현">
+    <meta name="description" content="프로젝트-Ounce">
+    <meta name="keywords" content="2020, iOS">
+    <title>준현</title>
+    <link rel="stylesheet" href="../css/common.css">
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="main.html" role="button">5anniversary</a>
+        <a class="btn" href="history.html" role="button">History</a>
+        <a class="btn" href="project.html" role="button">Project</a>
+        <a class="btn" href="activities.html" role="button">Activities</a>
+        <a class="btn" href="contact.html" role="button">Contact</a>
+    </header>
+    <section style="margin-left: 10%;">
+        <p><img src="https://github.com/We-are-Ounce/OUNCE_iOS/blob/master/resources/icon.png?raw=true" width="300"></p>
+        <h3 id="-ounce-https-github-com-we-are-ounce-ounce_ios-">똑똑한 집사들을 위한 기록장 <a
+                href="https://github.com/We-are-Ounce/OUNCE_iOS">Ounce</a>.</h3>
+                <br/><br/><br/>
+        <p></p>
+        <blockquote>
+            <p>고양이들은 입맛이 까다로워, 집사들은 성공확률이 높은 시도를 위해 먹여본 캣푸드를 따로 기록하고 있습니다.<br/>
+                저희는 이러한 집사들의 고민을 해결하기 위해 직관적인 기록, 서로의 목록 공유, 입맛이 비슷한 고양이 추천 기능을 제공하고 있습니다. </p>
+            <p>기록부터 선택까지, 온스가 함께합니다.</p><br/><br/>
+        </blockquote>
+        <p><img src="https://github.com/We-are-Ounce/OUNCE_iOS/blob/master/resources/ounce_워크플로우.jpg?raw=true"
+                width="500"></p>
+        <h2 id="-">🍎 목차</h2>
+        <ul>
+            <li>
+                <p><a
+                        href="https://github.com/We-are-Ounce/Ounce_iOS/wiki/Ounce_Coding_Convention">Coding-Convention</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="https://github.com/We-are-Ounce/Ounce_iOS/wiki/Ounce_Foldering">Foldering</a></p>
+            </li>
+            <li>
+                <p><a href="https://github.com/We-are-Ounce/Ounce_iOS/wiki/Ounce_iOS_Scrum">Scrum</a></p>
+            </li>
+            <li>
+                <p><a href="https://github.com/We-are-Ounce/Ounce_iOS/wiki/Ounce_Workflow">Work-flow</a></p>
+            </li>
+            <li>
+                <p><a href="https://github.com/We-are-Ounce/OUNCE_iOS/wiki/Git-manage">Github manage</a></p>
+            </li>
+            <li>
+                <p><a href="#-library">Library</a></p>
+            </li>
+            <li>
+                <p><a href="#간단한-설명">간단한 설명</a></p>
+            </li>
+            <li>
+                <p><a href="#-기능-소개">기능 소개</a></p>
+            </li>
+            <li>
+                <p><a href="#-project">Project</a></p>
+            </li>
+            <li>
+                <p><a href="#-최강-아요-멤버">팀원 소개</a> </p>
+            </li>
+        </ul>
+        <p><br /><br><br /> </p>
+        <h3 id="-">📱 개발 환경</h3>
+        <ul>
+            <li>
+                <p><strong>Xcode 11.5</strong></p>
+            </li>
+            <li>
+                <p><strong>iOS 13.0</strong></p>
+            </li>
+            <li>
+                <p><strong>Swift 5</strong> </p>
+            </li>
+        </ul>
+        <p><br /><br><br /> </p>
+        <h3 id="-library">🛠 Library</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>라이브러리</th>
+                    <th>목적</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="https://github.com/Alamofire/Alamofire">Alamofire</a></td>
+                    <td>서버 통신</td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/bannzai/Gedatsu">Gedatsu</a></td>
+                    <td>오토레이아웃 에러 디버깅 검출</td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/onevcat/Kingfisher">Kingfisher</a></td>
+                    <td>이미지 처리</td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/SnapKit/SnapKit">SnapKit</a></td>
+                    <td>코드 레이아웃 작성</td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/jrendel/SwiftKeychainWrapper">SwiftKeychainWrapper</a></td>
+                    <td>저장소 암호화를 위해서</td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/devxoul/Then">Then</a></td>
+                    <td>컴포넌트 코드 작성의 용이를 위해</td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/Yummypets/YPImagePicker">YPImagePicker</a></td>
+                    <td>사진첩 사용</td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/ink-spot/UPCarouselFlowLayout">UPCarouselFlowLayout</a></td>
+                    <td>Carousel effect</td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/jriosdev/iOSDropDown">iOSDropDown</a></td>
+                    <td>DropDown 효과</td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/ChiliLabs/CHIPageControl">CHIPageControl</a></td>
+                    <td>인디케이터</td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/swiftgif/SwiftGif">SwiftGifOrigin</a></td>
+                    <td>GIF 이미지 사용</td>
+                </tr>
+            </tbody>
+        </table>
+        <p><br /><br><br /> </p>
+        <h3 id="-">💻 기능 소개</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>기능</th>
+                    <th>상세 기능</th>
+                    <th>담당</th>
+                    <th>구현 여부</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>스플래시</td>
+                    <td>스플래시</td>
+                    <td><a href="https://github.com/5anniversary">준현</a></td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td>로그인</td>
+                    <td>로그인</td>
+                    <td><a href="https://github.com/5anniversary">준현</a></td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td>회원가입</td>
+                    <td>이메일 인증</td>
+                    <td><a href="https://github.com/5anniversary">준현</a></td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>아이디 검증</td>
+                    <td><a href="https://github.com/5anniversary">준현</a></td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>비밀번호 검증</td>
+                    <td><a href="https://github.com/5anniversary">준현</a></td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>회원가입</td>
+                    <td><a href="https://github.com/5anniversary">준현</a></td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td>프로필 등록</td>
+                    <td>프로필 등록</td>
+                    <td><a href="https://github.com/5anniversary">준현</a></td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td>홈 화면</td>
+                    <td>정렬</td>
+                    <td><a href="https://github.com/juyeonblue">주연</a></td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>필터</td>
+                    <td><a href="https://github.com/juyeonblue">주연</a></td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>계정 선택</td>
+                    <td><a href="https://github.com/juyeonblue">주연</a></td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>계정 추가</td>
+                    <td><a href="https://github.com/juyeonblue">주연</a></td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>팔로워</td>
+                    <td><a href="https://github.com/psychehose">호세</a></td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>팔로잉</td>
+                    <td><a href="https://github.com/psychehose">호세</a></td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>설정</td>
+                    <td>-</td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>프로필 수정</td>
+                    <td>-</td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td>설정</td>
+                    <td>설정 메뉴 내부에서 로그아웃</td>
+                    <td><a href="https://github.com/juyeonblue">주연</a></td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td>기록하기</td>
+                    <td>기록 하기</td>
+                    <td><a href="https://github.com/profitjean">윤진</a></td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>제품 검색</td>
+                    <td><a href="https://github.com/profitjean">윤진</a></td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>제품이 없을시 제품 생성과 함께 기록</td>
+                    <td><a href="https://github.com/profitjean">윤진</a></td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td>제품</td>
+                    <td>제품 검색</td>
+                    <td><a href="https://github.com/5anniversary">준현</a></td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td>둘러보기</td>
+                    <td>둘러보기 카드 뷰</td>
+                    <td><a href="https://github.com/psychehose">호세</a></td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td>리뷰 추가</td>
+                    <td>리뷰 추가</td>
+                    <td><a href="https://github.com/5anniversary">준현</a></td>
+                    <td>O</td>
+                </tr>
+            </tbody>
+        </table>
+        <p><br /><br><br /> </p>
+        <h3 id="-screenshots">📍 Screenshots</h3>
+        <ol>
+            <li>
+                <p>Splash</p>
+                <p><img src="https://user-images.githubusercontent.com/61657569/87795727-6f316300-c883-11ea-9f5a-289eafa54566.png"
+                        width="150"></p>
+            </li>
+        </ol>
+        <ol>
+            <li>
+                <p>Login</p>
+                <p> <img src="https://user-images.githubusercontent.com/61657569/87795692-680a5500-c883-11ea-823c-95cda1590752.png"
+                        width="150"></p>
+            </li>
+        </ol>
+        <ol>
+            <li>
+                <p>Signup</p>
+                <p><img src="https://user-images.githubusercontent.com/61657569/87795695-693b8200-c883-11ea-943a-fa3334c5e0c1.png"
+                        width="150"> <img
+                        src="https://user-images.githubusercontent.com/61657569/87795703-6a6caf00-c883-11ea-88e0-b3c64cf95398.png"
+                        width="150"> <img
+                        src="https://user-images.githubusercontent.com/61657569/87796479-5f664e80-c884-11ea-9424-58cdf5553b55.png"
+                        width="150"></p>
+            </li>
+        </ol>
+        <ol>
+            <li>
+                <p>Register</p>
+                <p> <img src="https://user-images.githubusercontent.com/61657569/87795710-6b9ddc00-c883-11ea-9fd0-ed283df714e9.png "
+                        width="150"></p>
+            </li>
+        </ol>
+        <ol>
+            <li>
+                <p>Home</p>
+                <p><img src="https://user-images.githubusercontent.com/61657569/87795716-6d679f80-c883-11ea-9f8d-86a23bd7a82b.png"
+                        width="150"></p>
+            </li>
+        </ol>
+        <ol>
+            <li>
+                <p>Setting</p>
+                <p><img src="https://user-images.githubusercontent.com/61657569/87798173-a35a5300-c886-11ea-8c0e-4f74074856ba.png"
+                        width="150"></p>
+            </li>
+        </ol>
+        <ol>
+            <li>
+                <p>Post</p>
+                <p><img src="https://user-images.githubusercontent.com/61657569/87795725-6e98cc80-c883-11ea-9c02-9f7534b9e382.png"
+                        width="150"> <img
+                        src="https://user-images.githubusercontent.com/61657569/87795723-6e003600-c883-11ea-9324-c4ac065678dd.png"
+                        width="150"> <img
+                        src="https://user-images.githubusercontent.com/61657569/87797642-f54ea900-c885-11ea-9867-6f607b279105.png"
+                        width="150"></p>
+            </li>
+        </ol>
+        <ol>
+            <li>
+                <p>Browse </p>
+                <p><img src="https://user-images.githubusercontent.com/55732968/87797968-5fffe480-c886-11ea-96fc-e3191a74ec54.png"
+                        width="150"> <img
+                        src="https://user-images.githubusercontent.com/55732968/87797981-642c0200-c886-11ea-8bae-c0cc5629d8b5.png"
+                        width="150"> <img
+                        src="https://user-images.githubusercontent.com/55732968/87797983-64c49880-c886-11ea-8a95-03399b781741.png"
+                        width="150"> <img
+                        src="https://user-images.githubusercontent.com/55732968/87797985-65f5c580-c886-11ea-8135-ade7e056df19.png"
+                        width="150"> <img
+                        src="https://user-images.githubusercontent.com/55732968/87797990-668e5c00-c886-11ea-8552-fb0faffd86c8.png"
+                        width="150"> <img
+                        src="https://user-images.githubusercontent.com/55732968/87797992-6726f280-c886-11ea-9b47-ef51a0eac1d0.png"
+                        width="150"></p>
+            </li>
+        </ol>
+        <p><br /><br><br /> </p>
+        <h3 id="-project">📚 Project</h3>
+        <ul>
+            <li>
+                <p><a href="https://github.com/We-are-Ounce/OUNCE_iOS/projects/1">Week 1</a></p>
+            </li>
+            <li>
+                <p><a href="https://github.com/We-are-Ounce/OUNCE_iOS/projects/2">Week 2</a></p>
+            </li>
+            <li>
+                <p><a href="https://github.com/We-are-Ounce/OUNCE_iOS/projects/3">Week 3</a></p>
+            </li>
+            <li>
+                <p><a href="https://github.com/We-are-Ounce/OUNCE_iOS/projects/4">Help/Bug</a> </p>
+            </li>
+        </ul>
+        <p><br /><br><br /> </p>
+        <h3 id="-">💡새롭게 알게 된 것</h3>
+        <blockquote>
+            <p>김호세 </p>
+            <h4 id="carousel-effect-autolayout-programmatically-">carousel effect에 대해 알게되었슴당 및 autoLayout를
+                programmatically로 구현 방법을 알게되었슴당 히힛😝</h4>
+            <pre><code class="lang-swift">let labelName = UILabel().then {
+     $0.<span class="hljs-attribute">textColor = .black
+     $0.backgroundColor = .white
+     $0.textAlignment = .center
+     $0.font = UIFont.systemFont(ofSize</span>: 13)
+     $0<span class="hljs-variable">.text</span> = "가을이"
+ } // Then을 이용해서, 라벨을 생성하고 가독성을 위해서 BrowseCvCell의 extension BrowseCVCell + constranint 을 만들었습니다. 그 후에
+
+func initial() {  // Snapkit을 이용하여 programmatically autolayout을 설정 해주었습니다.
+contentView<span class="hljs-variable">.addSubview</span>(labelName) //contentView 안에 그려주고
+
+labelName<span class="hljs-variable">.snp</span><span class="hljs-variable">.makeConstraints</span> { (make) in
+         make<span class="hljs-variable">.leading</span><span class="hljs-variable">.equalTo</span>(contentView<span class="hljs-variable">.snp</span><span class="hljs-variable">.leading</span>)<span class="hljs-variable">.inset</span>(88) // label의 leading을 contentView의 leading에 constraint를 걸었습니다.
+
+         make<span class="hljs-variable">.trailing</span><span class="hljs-variable">.equalTo</span>(contentView<span class="hljs-variable">.snp</span><span class="hljs-variable">.trailing</span>)<span class="hljs-variable">.inset</span>(87) // label의 trailing을 contentView의 trailing에 constraint를 걸었습니다.
+
+         make<span class="hljs-variable">.top</span><span class="hljs-variable">.equalTo</span>(imgCatView<span class="hljs-variable">.snp</span><span class="hljs-variable">.bottom</span>)<span class="hljs-variable">.inset</span>(-10) 
+// label의 top을 그 label 위에 있는 컴포넌트 (imgCatView)의 bottom에 걸었습니다. 기준이 bottom 이므로 Inset 값을 음수로 설정하였습니다.                        
+     }  
+}
+</code></pre>
+        </blockquote>
+        <p><br /> </p>
+        <blockquote>
+            <p>박주연 </p>
+            <h4 id="collectionview-tableview-">CollectionView보다 TableView가 더 좋다^^ 다 내꺼 호로록🥤</h4>
+            <h5 id="tableview-middle-cell-">TableView middle cell 헤더에 고정시키기</h5>
+        </blockquote>
+        <pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">tableView</span><span class="hljs-params">(<span class="hljs-number">_</span> tableView: UITableView, heightForHeaderInSection section: Int)</span></span> -&gt; <span class="hljs-type">CGFloat</span> {
+
+        <span class="hljs-keyword">if</span> section == <span class="hljs-number">1</span>{
+            <span class="hljs-keyword">return</span> <span class="hljs-number">49</span>
+        }
+        <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>
+        }
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">tableView</span><span class="hljs-params">(<span class="hljs-number">_</span> tableView: UITableView, viewForHeaderInSection section: Int)</span></span> -&gt; <span class="hljs-type">UIView</span>? {
+
+        <span class="hljs-keyword">if</span> section == <span class="hljs-number">1</span> {
+
+             <span class="hljs-keyword">let</span> headerCell = reviewTV.dequeueReusableCell(withIdentifier: <span class="hljs-string">"HeaderCell"</span>)
+
+            <span class="hljs-keyword">return</span> headerCell
+        }
+        <span class="hljs-keyword">else</span>{
+            <span class="hljs-keyword">let</span> rect = <span class="hljs-type">CGRect</span>(x: <span class="hljs-number">0</span>, y: <span class="hljs-number">0</span>, width: <span class="hljs-number">0</span>, height: <span class="hljs-number">0</span>)
+            <span class="hljs-keyword">let</span> myView = <span class="hljs-type">UIView</span>(frame: rect)
+
+            <span class="hljs-keyword">return</span> myView
+        }
+
+    }
+</code></pre>
+        <p><br /> </p>
+        <blockquote>
+            <p>이윤진 </p>
+            <h4 id="navigationcontroller-xib-">NavigationController 연결 및 xib 활용 방법을 내가 정복했다🏋️‍♂️</h4>
+            <h5 id="xib-">xib 파일을 활용해서 뷰 재활용하는 걸 처음 시도해봤다,,,신기방기,,,</h5>
+            <pre><code class="lang-swift">    <span class="hljs-keyword">let</span> custom = <span class="hljs-type">Bundle</span>.main.loadNibNamed(<span class="hljs-string">"PostSC"</span>, owner: <span class="hljs-keyword">self</span>, options: <span class="hljs-literal">nil</span>)?[<span class="hljs-number">0</span>] <span class="hljs-keyword">as</span>! <span class="hljs-type">PostSC</span>
+        <span class="hljs-keyword">self</span>.addScrollView.addSubview(custom)
+</code></pre>
+        </blockquote>
+        <p><br /> </p>
+        <blockquote>
+            <p>오준현 </p>
+        </blockquote>
+        <h4 id="custom-tabbar-">custom TabBar 도전하기 빠샤🥊</h4>
+        <h5 id="-">디자인파트에서 원하는 커스텀 탭바가 있어 새롭게 커스텀 탭바를 도전해봤습다~!</h5>
+        <blockquote>
+            <p>먼저 커스텀 탭바를 구현해줄 클래스가 필요해 만들어줍니다.</p>
+            <pre><code class="lang-swift">    <span class="hljs-keyword">weak</span> <span class="hljs-keyword">var</span> addDelegate: <span class="hljs-type">RootTabBarDelegate</span>?
+
+    <span class="hljs-keyword">private</span> <span class="hljs-built_in">lazy</span> <span class="hljs-keyword">var</span> addButton:<span class="hljs-type">UIButton</span> = {
+        <span class="hljs-keyword">return</span> <span class="hljs-type">UIButton</span>()
+    }()
+
+    <span class="hljs-keyword">override</span> <span class="hljs-keyword">init</span>(frame: <span class="hljs-type">CGRect</span>) {
+        <span class="hljs-keyword">super</span>.<span class="hljs-keyword">init</span>(frame: frame)
+        <span class="hljs-type">UITabBar</span>.clearShadow()
+        addButton.setBackgroundImage(<span class="hljs-type">UIImage</span>.<span class="hljs-keyword">init</span>(named: <span class="hljs-string">"btnAdd"</span>), <span class="hljs-keyword">for</span>: .normal)
+        addButton.addTarget(<span class="hljs-keyword">self</span>,
+                            action: #selector(<span class="hljs-type">CustomTabBar</span>.addButtonClick),
+                            <span class="hljs-keyword">for</span>: .touchUpInside)
+        <span class="hljs-keyword">self</span>.addSubview(addButton)
+    }
+
+    <span class="hljs-keyword">required</span> <span class="hljs-keyword">init</span>?(coder aDecoder: <span class="hljs-type">NSCoder</span>) {
+        <span class="hljs-built_in">fatalError</span>(<span class="hljs-string">"init(coder:) has not been implemented"</span>)
+    }
+
+    <span class="hljs-meta">@objc</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">addButtonClick</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-keyword">if</span> addDelegate != <span class="hljs-literal">nil</span>{
+            addDelegate?.addClick()
+        }
+    }
+
+    <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">layoutSubviews</span><span class="hljs-params">()</span></span> {
+
+        <span class="hljs-keyword">super</span>.layoutSubviews()
+
+        <span class="hljs-keyword">let</span> buttonX = <span class="hljs-keyword">self</span>.frame.size.width/<span class="hljs-number">3</span>
+        <span class="hljs-keyword">var</span> index = <span class="hljs-number">0</span>
+        <span class="hljs-keyword">for</span> barButton <span class="hljs-keyword">in</span> <span class="hljs-keyword">self</span>.subviews{
+
+            <span class="hljs-keyword">if</span> barButton.isKind(of: <span class="hljs-type">NSClassFromString</span>(<span class="hljs-string">"UITabBarButton"</span>)!){
+
+                <span class="hljs-keyword">if</span> index == <span class="hljs-number">1</span>{
+                    <span class="hljs-comment">/// Setting the Add Button Position</span>
+                    addButton.frame.size = <span class="hljs-type">CGSize</span>.<span class="hljs-keyword">init</span>(width: (addButton.currentBackgroundImage?.size.width)!, height: (addButton.currentBackgroundImage?.size.height)!)
+                    addButton.center = <span class="hljs-type">CGPoint</span>.<span class="hljs-keyword">init</span>(x: <span class="hljs-keyword">self</span>.center.x, y: <span class="hljs-keyword">self</span>.frame.size.height/<span class="hljs-number">2</span> - <span class="hljs-number">18</span>)
+                    index += <span class="hljs-number">1</span>
+                }
+                barButton.frame = <span class="hljs-type">CGRect</span>.<span class="hljs-keyword">init</span>(x: buttonX * <span class="hljs-type">CGFloat</span>(index), y: <span class="hljs-number">0</span>, width: buttonX, height: <span class="hljs-keyword">self</span>.frame.size.height)
+                index += <span class="hljs-number">1</span>
+
+            }
+        }
+        <span class="hljs-keyword">self</span>.bringSubviewToFront(addButton)
+    }
+
+    <span class="hljs-comment">/// Rewrite the hitTest method, listen for the button click to make the highlighted tabbar part respond to the click</span>
+    <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">hitTest</span><span class="hljs-params">(<span class="hljs-number">_</span> point: CGPoint, with event: UIEvent?)</span></span> -&gt; <span class="hljs-type">UIView</span>? {
+
+        <span class="hljs-comment">/// Determine whether it is the root controller</span>
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">self</span>.isHidden {
+            <span class="hljs-comment">/// tabbar hiding is not handled in the home page system</span>
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">super</span>.hitTest(point, with: event)
+
+        }<span class="hljs-keyword">else</span>{
+            <span class="hljs-comment">/// Converting Money Touch Points to Buttons to Generate New Points</span>
+            <span class="hljs-keyword">let</span> onButton = <span class="hljs-keyword">self</span>.convert(point, to: <span class="hljs-keyword">self</span>.addButton)
+            <span class="hljs-comment">/// Determine whether the new point is on the button</span>
+            <span class="hljs-keyword">if</span> <span class="hljs-keyword">self</span>.addButton.point(inside: onButton, with: event){
+                <span class="hljs-keyword">return</span> addButton
+            }<span class="hljs-keyword">else</span>{
+                <span class="hljs-comment">/// No System Processing on the Button</span>
+                <span class="hljs-keyword">return</span> <span class="hljs-keyword">super</span>.hitTest(point, with: event)
+            }
+        }
+    }
+</code></pre>
+            <p>여기서 주입해줄 Delegate 패턴을 만들어줍니다</p>
+            <pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">protocol</span> <span class="hljs-title">RootTabBarDelegate</span>:<span class="hljs-title">NSObjectProtocol</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">addClick</span><span class="hljs-params">()</span></span>
+}
+</code></pre>
+            <p>그리고 마지막으로 탭바 컨트롤러에서 Delegate를 주입받고</p>
+            <pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">extension</span> <span class="hljs-title">TBC</span> : <span class="hljs-title">RootTabBarDelegate</span></span>{
+
+}
+</code></pre>
+            <pre><code class="lang-swift">    <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">viewDidLoad</span><span class="hljs-params">()</span></span> {
+        <span class="hljs-keyword">super</span>.viewDidLoad()
+
+        <span class="hljs-keyword">let</span> tab = <span class="hljs-type">CustomTabBar</span>()
+        tab.addDelegate = <span class="hljs-keyword">self</span>
+        <span class="hljs-keyword">self</span>.setValue(tab, forKey: <span class="hljs-string">"tabBar"</span>)
+    }
+</code></pre>
+            <p>addClick 즉 커스텀 할때 가운데에 들어갈 버튼을 클릭할때 실행될 코드를 작성해주시면 됩니다,</p>
+            <pre><code class="lang-swift">    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">addClick</span><span class="hljs-params">()</span></span> {
+        <span class="hljs-keyword">let</span> sb = <span class="hljs-type">UIStoryboard</span>(name: <span class="hljs-string">"Post"</span>, bundle: <span class="hljs-literal">nil</span>)
+        <span class="hljs-keyword">let</span> vc = sb.instantiateViewController(withIdentifier: <span class="hljs-string">"PostNavVC"</span>) <span class="hljs-keyword">as</span>! <span class="hljs-type">PostNavVC</span>
+        vc.modalPresentationStyle = .fullScreen
+
+        <span class="hljs-keyword">self</span>.present(vc, animated: <span class="hljs-literal">true</span>)
+    }
+</code></pre>
+        </blockquote>
+        <p><br /><br><br /> </p>
+        <h3 id="-">😻 최강 아요 멤버</h3>
+        <p><img src="https://user-images.githubusercontent.com/55732968/86831239-9e044800-c0d1-11ea-8ab9-408db0ed00ab.jpeg"
+                width="100" height="100"> <img
+                src="https://user-images.githubusercontent.com/55732968/86831306-b07e8180-c0d1-11ea-807c-e7c5cbbd871e.jpeg"
+                width="100" height="100"> <img
+                src="https://user-images.githubusercontent.com/55732968/86831405-d015aa00-c0d1-11ea-9cd5-2ac904324133.jpeg"
+                width="100" height="100 "> <img
+                src="https://user-images.githubusercontent.com/55732968/86831496-eae81e80-c0d1-11ea-8e01-e6db7ea97d0a.jpeg"
+                height="100" width="100"></p>
+        <p><a href="https://github.com/psychehose">김호세</a> / (사원)</p>
+        <blockquote>
+            <p><strong>성장</strong></p>
+            <p>팀원들이 너무 좋아서 행복했다. 어렵지만 성장 할 수 있었던 즐거운 3주였다.</p>
+        </blockquote>
+        <p><a href="https://github.com/juyeonblue">박주연</a> / (차장. 사실 회장딸)</p>
+        <blockquote>
+            <p><strong>앱스토어 출시 &amp; 협업 능력 성장</strong> </p>
+            <p>우리 온스 영원하자❤️ 앱스토어 등록 고고~~</p>
+        </blockquote>
+        <p><a href="https://github.com/profitjean">이윤진</a> / (대리)</p>
+        <blockquote>
+            <p><strong>iOS 실력 성장 &amp; 앱스토어 출시</strong></p>
+            <p>온스 사랑해요❤️ 다들 3주동안 고생많았어요</p>
+        </blockquote>
+        <p><a href="https://github.com/5anniversary">오준현</a> / (부장)</p>
+        <blockquote>
+            <p><strong>앱스토어 출시</strong></p>
+            <p>우리 사원들과 함께 즐거운 3주를 보낼 수 있어서 아주 즐거운 시간이었습니다.</p>
+        </blockquote>
+    </section>
+</body>
 </html>

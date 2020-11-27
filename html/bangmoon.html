@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="오준현">
+    <meta name="description" content="활동 목록">
+    <meta name="keywords" content="활동">
+    <title>준현</title>
+    <link rel="stylesheet" href="../css/common.css">
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="main.html" role="button">5anniversary</a>
+        <a class="btn" href="history.html" role="button">History</a>
+        <a class="btn" href="project.html" role="button">Project</a>
+        <a class="btn" href="activities.html" role="button">Activities</a>
+        <a class="btn" href="contact.html" role="button">Contact</a>
+    </header>
+    <section style="margin-left: 10%;">
+        <p><img src="https://github.com/Soptkathon-26th-bangmoon/BangMoon-Server/blob/master/README_RES/logo.png?raw=true"
+                width="300"></p>
+        <h3 id="-https-github-com-soptkathon-26th-bangmoon-ios-">구석 문화생활, <a
+                href="https://github.com/Soptkathon-26th-bangmoon/iOS">방문</a> / 관람자가 언더 공연에 펀딩하고 공연 영상을 소비할 수 있는 서비스
+        </h3><br><br>
+        <p><strong><a href="https://github.com/Soptkathon-26th-bangmoon/BangMoon-Server/wiki">API docs- git
+                    wiki</a></strong></p>
+        <h2 id="why-">Why?</h2><br><br>
+        <p>코로나 사태로 인해 다수의 집단이 모이는 극장, 연극, 공연 등 발길이 줄어듦. 이에 따라 공연자들이 수입에 직격타를 맞음. 언더에서 활동하는 사람들은 더 힘들다는 것에 초점을 맞춰봄.</p>
+        <p>→ 이런사람들의 수익활동을 위해 돈을 내고 관련 영상 동영상을 받아서 볼 수 있는 service를 제공하자!! (무단 배포를 막기 위해 Funding이라는 system 추가?)
+            <br>
+            <br>
+            <br></p>
+        <h2 id="service">service</h2>
+        <ul>
+            <li>공연자가 직접 등록(공연 이름/가격/펀딩 목표 등 정보 및 예고)</li>
+            <li>소비자가 관심있는 공연은 응원하기</li>
+            <li>100% 달성 시 결제 요청 보내기(Alert)</li>
+            <li>일괄적으로 자동 결제</li>
+            <li>공연 촬영 후 업로드. 밀어준 사람들에게 공개.
+                <br>
+                <br>
+                <br></li>
+        </ul>
+        <h2 id="contributors-team-project">Contributors : Team Project</h2>
+        <ul>
+            <li><a href="https://github.com/5anniversary">오준현</a> - leader</li>
+            <li><a href="https://github.com/Hwangho">송황호</a></li>
+            <li><a href="https://github.com/xwoud">김민희</a>
+                <br>
+                <br>
+                <br></li>
+        </ul>
+        <h2 id="-">개발 환경</h2>
+        <ol>
+            <li>Swift 버전
+                5</li>
+            <li>Xcode 버전
+                11.5</li>
+            <li>사용한 라이브러리
+                Alamofire 4.8.2
+                Kingfisher
+                SnapKit
+                <br>
+                <br>
+                <br></li>
+        </ol>
+        <h2 id="-extension">사용한 Extension</h2>
+        <ul>
+            <li>UIColor : 각종 색 주입, hex로 조절</li>
+            <li>UIImageView : Kingfisher 사용</li>
+            <li>UIView : superview에 맞는 autolayout , rounding, border</li>
+            <li>UIViewcontroller : alertcontroller
+                <br>
+                <br>
+                <br></li>
+        </ul>
+        <h2 id="ios-">iOS 뷰</h2>
+        <p><img src="https://github.com/Soptkathon-26th-bangmoon/BangMoon-Server/blob/master/README_RES/view1.png?raw=true"
+                width="300">
+            <img src="https://github.com/Soptkathon-26th-bangmoon/BangMoon-Server/blob/master/README_RES/view2.png?raw=true"
+                width="300">
+            <img src="https://github.com/Soptkathon-26th-bangmoon/BangMoon-Server/blob/master/README_RES/view3.png?raw=true"
+                width="300">
+            <br>
+            <br>
+            <br></p>
+        <h2 id="-">핵심가치</h2>
+        <ol>
+            <li>
+                <p><strong>Raising</strong> :
+                    언더 공연자를 수면 위로 떠오르게 하다. / 다양한 공연을 공평하게 사람들에게 노출시킴으로써 일으키다.</p>
+            </li>
+            <li>
+                <p><strong>Low-cost</strong> :
+                    기존 티켓 대비 낮은 비용 / 생소한 공연도 적은 비용으로 쉽게 시도해볼 수 있는 기회를 제공.</p>
+            </li>
+            <li>
+                <p><strong>Seatless</strong> :
+                    앉아 있을 청중석이 없는 / 기존의 뮤지컬, 연극 공연과 달리 편안하게 방 안에서 소비하는. 청중석이 필요 없고 언제 어디서나 우린 이동하면서 연극을 볼 수 있다.</p>
+            </li>
+        </ol>
+        <h2 id="-">차별점</h2>
+        <ol>
+            <li>
+                <p>크라우드 펀딩 :
+                    상품이 동영상이다. 언택트의 개념 적용.</p>
+            </li>
+            <li>
+                <p>다른 티켓 플랫폼 :
+                    공연자가 다른 소셜커머스와 달리 수수료를 크게 지불하지 않고, 소비자도 낮은 가격으로 즐길 수 있음. 양 측의 진입장벽을 낮춤.
+                    <br>
+                    <br>
+                    <br></p>
+            </li>
+        </ol>
+        <h2 id="-">컬러 선택</h2>
+        <ol>
+            <li>BM Purple:
+                메인 컬러. &#39;방문&#39;이 미지한 공간임을 의미. (생소하고 다양한 공연) 으로 개성을 뽐내는 인디 아티스트</li>
+            <li>BM Gray:
+                서브 컬러. 심플함. 세련됨과 효율성을 상징
+                <br>
+                <br>
+                <br></li>
+        </ol>
+        <h2 id="http-">HTTP 서버 통신 구조체 생성</h2>
+        <pre><code class="lang-swift">struct Complete: Codable {
+                <span class="hljs-keyword">let</span> status: <span class="hljs-built_in">String</span>
+                <span class="hljs-keyword">let</span> message: <span class="hljs-built_in">String</span>
+                <span class="hljs-keyword">let</span> data: [ProjectList]
+            }
+            
+            
+            struct ProjectList: Codable {
+                <span class="hljs-keyword">let</span> pIdx: <span class="hljs-built_in">Int</span>
+                <span class="hljs-keyword">let</span> pPosterImg,pName, pGenre: <span class="hljs-built_in">String</span>
+                <span class="hljs-keyword">let</span> pDate, pTotalMoney, pRate, pTimes: <span class="hljs-built_in">Int</span>
+                <span class="hljs-keyword">let</span> pPercentage: <span class="hljs-built_in">Int</span>
+            
+                enum CodingKeys: <span class="hljs-built_in">String</span>, CodingKey {
+                    <span class="hljs-keyword">case</span> pIdx = <span class="hljs-string">"p_idx"</span>
+                    <span class="hljs-keyword">case</span> pPosterImg = <span class="hljs-string">"p_poster_img"</span>
+                    <span class="hljs-keyword">case</span> pName = <span class="hljs-string">"p_name"</span>
+                    <span class="hljs-keyword">case</span> pGenre = <span class="hljs-string">"p_genre"</span>
+                    <span class="hljs-keyword">case</span> pDate = <span class="hljs-string">"p_date"</span>
+                    <span class="hljs-keyword">case</span> pTotalMoney = <span class="hljs-string">"p_total_money"</span>
+                    <span class="hljs-keyword">case</span> pRate = <span class="hljs-string">"p_rate"</span>
+                    <span class="hljs-keyword">case</span> pTimes = <span class="hljs-string">"p_times"</span>
+                    <span class="hljs-keyword">case</span> pPercentage = <span class="hljs-string">"p_percentage "</span>
+                }
+            }
+            </code></pre>
+        <h2 id="http-">HTTP 서버 통신 구현</h2>
+        <pre><code class="lang-swift"><span class="hljs-keyword">static</span> <span class="hljs-keyword">let</span> shared = <span class="hljs-type">MyPageService</span>()
+                <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">getMyPageProjectService</span><span class="hljs-params">(completion: @escaping <span class="hljs-params">(NetworkResult&lt;Any&gt;)</span></span></span>-&gt;<span class="hljs-type">Void</span>) {
+                    <span class="hljs-keyword">let</span> <span class="hljs-type">URL</span> = <span class="hljs-type">APIConstants</span>.myPageprojectURL
+                    <span class="hljs-keyword">let</span> headers: <span class="hljs-type">HTTPHeaders</span> = [<span class="hljs-string">"Content-Type"</span>: <span class="hljs-string">"application/json"</span>]
+                    <span class="hljs-type">Alamofire</span>.request(<span class="hljs-type">URL</span>, method: .<span class="hljs-keyword">get</span>, parameters: <span class="hljs-literal">nil</span>, encoding: <span class="hljs-type">JSONEncoding</span>.<span class="hljs-keyword">default</span>, headers: headers).responseData { response <span class="hljs-keyword">in</span>
+                        <span class="hljs-keyword">switch</span> response.result {
+            
+                        <span class="hljs-keyword">case</span> .success:
+                            <span class="hljs-keyword">if</span> <span class="hljs-keyword">let</span> value = response.result.value {
+                                <span class="hljs-keyword">if</span> <span class="hljs-keyword">let</span> status = response.response?.statusCode {
+                                    <span class="hljs-keyword">switch</span> status {
+                                    <span class="hljs-keyword">case</span> <span class="hljs-number">200</span>:
+                                        <span class="hljs-keyword">do</span> {
+                                            <span class="hljs-keyword">let</span> decoder = <span class="hljs-type">JSONDecoder</span>()
+                                            <span class="hljs-keyword">let</span> result = <span class="hljs-keyword">try</span> decoder.decode(<span class="hljs-type">Complete</span>.<span class="hljs-keyword">self</span>, from: value)
+            
+                                            completion(.success(result))
+                                        } <span class="hljs-keyword">catch</span> {
+                                            completion(.pathErr)
+                                        }
+                                    <span class="hljs-keyword">default</span>:<span class="hljs-keyword">break</span>
+            </code></pre>
+
+    </section>
+</body>
+
+</html>
