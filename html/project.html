@@ -1,90 +1,93 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="utf-8">
-        <meta name="author" content="오준현">
-        <meta name="description" content="프로젝트 목록">
-        <meta name="keywords" content="프로젝트">
-        <title>준현</title>
-        <link rel="stylesheet" href="../css/common.css">
-    </head>
-    <body>
-        <header>
-            <a class="logo" href="main.html" role="button">5anniversary</a>
-            <a class="btn" href="history.html" role="button">History</a>
-            <a class="btn" href="project.html" role="button">Project</a>
-            <a class="btn" href="activities.html" role="button">Activities</a>
-            <a class="btn" href="contact.html" role="button">Contact</a>
-        </header>
-        <section style="margin-left: 10%;">
-            <table style="font-size:30px;">
-                <thead>
-                    <td>프로젝트명</td>
-                    <td>기간</td>
-                    <td>사용 기술</td>
-                    <td>결과</td>
-                    <td>링크</td>
-                </thead>
-                <tr>
-                    <td>Maru</td>
-                    <td>2020.08 ~</td>
-                    <td>iOS, Alamofire, Socket.io, Firebase</td>
-                    <td>무중력지대 씨앗 프로젝트 선정</td>
-                    <td><a href="https://url.kr/ap9CX7">APP STORE</a></td>
-                </tr>
-                <tr>
-                    <td>Platz</td>
-                    <td>2020.07 ~ 2020.10</td>
-                    <td>iOS, Kakao Map SDK, Graph QL</td>
-                    <td></td>
-                    <td><a href="https://github.com/DDD-4/undefined-iOS">Github</a></td>
-                </tr>
-                <tr>
-                    <td>Ounce</td>
-                    <td>2020.06 ~</td>
-                    <td>iOS, Alamofire, Firebase</td>
-                    <td>SOPT 26기 최우수상</td>
-                    <td><a href="https://github.com/We-are-Ounce/OUNCE_iOS">Github</a></td>
-                </tr>
-                <tr>
-                    <td>방문</td>
-                    <td>2020.06.06 ~ 2020.06.07</td>
-                    <td>iOS, Alamofire</td>
-                    <td></td>
-                    <td><a href="https://5anniversary.dev/20200604/BangMoon">Github</a></td>
-                </tr>
-                <tr>
-                    <td>StudyTogether</td>
-                    <td>2020.03 ~ 2020.11</td>
-                    <td>iOS, Alamofire, Vapor, MySQL</td>
-                    <td>제 11회 IT&미디어컨텐츠 경진대회 동상</td>
-                    <td>
-                        <a href="https://github.com/SKHU-STUDY/StudySearch">iOS Git</a><br/>
-                        <a href="https://github.com/SKHU-STUDY/Server">Server Git</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>NUTEE</td>
-                    <td>2020.01 ~</td>
-                    <td>iOS, Alamofire, Firebase</td>
-                    <td>제 7회 소프트웨어 경진대회 1등 <br/>제 11회 IT&미디어컨텐츠 경진대회 장려상</td>
-                    <td><a href="https://url.kr/SmlOFR">APP STORE</a></td>
-                </tr>
-                <tr>
-                    <td>MAL(Marble Auto Launcher)</td>
-                    <td>2020.04 ~</td>
-                    <td>iOS</td>
-                    <td></td>
-                    <td><a href="https://apps.apple.com/kr/app/mal-auto-launch/id1531299543">APP STORE</a></td>
-                </tr>
-                <tr>
-                    <td>Flood</td>
-                    <td>2019.12 ~ 2020.01</td>
-                    <td>iOS, Alamofire, Firebase</td>
-                    <td>SOPT 25기 앱잼 대상</td>
-                    <td><a href="https://github.com/Flood-SOPT25th/Flood_iOS">Github</a></td>
-                </tr>
-            </table>
-        </section>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="오준현">
+    <meta name="description" content="프로젝트 목록">
+    <meta name="keywords" content="프로젝트">
+    <title>준현</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="../css/common.css">
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="main.html" role="button">5anniversary</a>
+        <a class="btn" href="history.html" role="button">History</a>
+        <a class="btn" href="project.html" role="button">Project</a>
+        <a class="btn" href="contact.html" role="button">Contact</a>
+    </header>
+    <section style="margin-left: 10%;">
+        <table style="font-size:30px;" id="table">
+            <thead>
+                <td>프로젝트명</td>
+                <td>기간</td>
+                <td>사용 기술</td>
+                <td>결과</td>
+                <td>링크</td>
+            </thead>
+            <tr onclick="window.location='maru.html';">
+                <td>Maru</td>
+                <td>2020.08 ~</td>
+                <td>iOS, Alamofire, Socket.io, Firebase</td>
+                <td>무중력지대 씨앗 프로젝트 선정</td>
+                <td><a href="https://url.kr/ap9CX7">APP STORE</a></td>
+            </tr>
+            <tr>
+                <td>Platz</td>
+                <td>2020.07 ~ 2020.10</td>
+                <td>iOS, Kakao Map SDK, Graph QL</td>
+                <td></td>
+                <td><a href="https://github.com/DDD-4/undefined-iOS">Github</a></td>
+            </tr>
+            <tr onclick="window.location='maru.html';"> 
+                <td>Ounce</td>
+                <td>2020.06 ~</td>
+                <td>iOS, Alamofire, Firebase</td>
+                <td>SOPT 26기 최우수상</td>
+                <td><a href="https://github.com/We-are-Ounce/OUNCE_iOS">Github</a></td>
+            </tr>
+            <tr onclick="window.location='bangmoon.html';">
+                <td>방문</td>
+                <td>2020.06.06 ~ 2020.06.07</td>
+                <td>iOS, Alamofire</td>
+                <td></td>
+                <td><a href="https://5anniversary.dev/20200604/BangMoon">Github</a></td>
+            </tr>
+            <tr onclick="window.location='studytogether.html';">
+                <td>StudyTogether</td>
+                <td>2020.03 ~ 2020.11</td>
+                <td>iOS, Alamofire, Vapor, MySQL</td>
+                <td>제 11회 IT&미디어컨텐츠 경진대회 동상</td>
+                <td>
+                    <a href="https://github.com/SKHU-STUDY/StudySearch">iOS Git</a><br />
+                    <a href="https://github.com/SKHU-STUDY/Server">Server Git</a>
+                </td>
+            </tr>
+            <tr onclick="window.location='nutee.html';"> 
+                <td>NUTEE</td>
+                <td>2020.01 ~</td>
+                <td>iOS, Alamofire, Firebase</td>
+                <td>제 7회 소프트웨어 경진대회 1등 <br />제 11회 IT&미디어컨텐츠 경진대회 장려상</td>
+                <td><a href="https://url.kr/SmlOFR">APP STORE</a></td>
+            </tr>
+            <tr>
+                <td>MAL(Marble Auto Launcher)</td>
+                <td>2020.04 ~</td>
+                <td>iOS</td>
+                <td></td>
+                <td><a href="https://apps.apple.com/kr/app/mal-auto-launch/id1531299543">APP STORE</a></td>
+            </tr>
+            <tr onclick="window.location='flood.html';">
+                <td>Flood</td>
+                <td>2019.12 ~ 2020.01</td>
+                <td>iOS, Alamofire, Firebase</td>
+                <td>SOPT 25기 앱잼 대상</td>
+                <td><a href="https://github.com/Flood-SOPT25th/Flood_iOS">Github</a></td>
+            </tr>
+        </table>
+    </section>
+</body>
+
 </html>
